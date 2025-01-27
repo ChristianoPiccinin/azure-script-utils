@@ -1,0 +1,5 @@
+Resources
+| project name, type, apiVersion
+| where type =~ 'microsoft.sql/servers/databases'
+| where isnotnull(apiVersion)
+| order by type asc
